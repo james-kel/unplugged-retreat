@@ -133,13 +133,13 @@ p {
 }
  
 img {
- 
+  width: 100%;
 }
  
 figure {
- 
+  margin: 0;
 }
- 
+
 address {
   font-style: normal;
 
@@ -166,6 +166,14 @@ header {
 
 header .content-wrapper{
   margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header figure {
+  width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -248,7 +256,12 @@ aside .form {
 .hero-area {
   display: flex;
   justify-content: center;
-flex-flow: row wrap;
+  flex-flow: row wrap;
+  background-image: url('../img/jake-melara-30679-unsplash.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+min-height: 500px;
 }
 
 .hero-area h1 {
@@ -300,6 +313,10 @@ input[type=button] {
   display: flex;
   justify-content: center;
 flex-flow: row wrap;
+background-image: url('../img/rawpixel-800820-unsplash1.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
 }
 
 .features h2 {
