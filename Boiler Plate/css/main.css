@@ -206,6 +206,7 @@ header nav ul {
 
 header nav ul li {
   font-size: 1.125em;
+  
 }
 
 footer {
@@ -427,6 +428,7 @@ background-position: center;
 
 .faq-content h4 {
   line-height: 1.333;
+}
 
 /* ==========================================================================
    Helper classes
@@ -436,8 +438,7 @@ background-position: center;
  * Hide visually and from screen readers
  */
 
-.hidden,
-[hidden] {
+.hidden {
   display: none !important;
 }
 
@@ -520,8 +521,8 @@ background-position: center;
   
 @media only screen and (min-width: 768px) {
 
-    /* General styles */
-    .content-wrapper {
+  /* General styles */
+  .content-wrapper {
       max-width: 640px;
       margin: 100px 0;
   }
@@ -543,7 +544,7 @@ background-position: center;
   }
 
   header nav ul {
-      justify-content: space-between;
+      justify-content: space-around;
   }
 
   .header-divider {
@@ -554,17 +555,16 @@ background-position: center;
 
   /* Aside */
   aside .content-wrapper {
-      margin: 50px 0;
-      display: flex;
-      justify-content:space-between;
-      flex-flow:row wrap;
-
+    margin: 50px 0;
+    display: flex;
+    justify-content:space-between;
+    flex-flow:row wrap;
   }
 
   aside .content-wrapper .form-description,
   aside .content-wrapper .form {        
-      width:40%;   
-      margin: 0;
+    width:40%;   
+    margin: 0;
   }
 
   /* Features */
@@ -575,8 +575,6 @@ background-position: center;
     align-items:center;
     flex-flow: column wrap;
     flex-basis: 50%;
-
-
   }
 
   .features .features-item-description {
@@ -620,36 +618,45 @@ background-position: center;
     justify-content: space-between;
     align-items:center;
     padding-top: 20px;
-}
+  }
 
-.mission-content p {
+  .mission-content p {
     width: 45%;
-}
+  }
 
-.contact-section .content-wrapper h2 {
+
+  .map figure {
+  padding-bottom: 45.5%; 
+  }
+
+  .contact-section .content-wrapper h2 {
     width:80%;
-}
+  }
 
-.contact-content {
+  .contact-content {
     display:flex;
     justify-content:space-between;
     align-items:flex-start;
-}
+  }
 
-/***** FAQ Page *****/
+  .contact-content h4 {
+    font-size: 1.5em;
+  }
+
+  /***** FAQ Page *****/
 
 
   .faq .content-wrapper {
     justify-content: space-between;
-}
+  }
 
-.faq-content {
+  .faq-content {
     flex-basis: 45%;
-}
+  }
 
-.faq h2 {
+  .faq h2 {
     width: 100%;
-}
+  }
 }
     
 @media only screen and (min-width: 1200px) {
@@ -693,6 +700,10 @@ About Page
 .contact-section .content-wrapper h2 {
   width: 95%;
 }
+
+.map figure {
+  padding-bottom: 35.5%; 
+  }
 
 /* ==========================================================================
 FAQ Page
