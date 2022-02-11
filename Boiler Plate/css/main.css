@@ -363,6 +363,12 @@ background-position: center;
   width: 55%;
   margin: 20px 0;
 }
+
+/* contact */
+
+.social i{
+background-color: #527158;
+}
 /* ABOUT PAGE*/
 
 .mission {
