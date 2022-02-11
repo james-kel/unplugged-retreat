@@ -128,7 +128,7 @@ font-weight: 500;
  
 p {
 	font-size: 0.875em;
-  line-height: 1.285em;
+  line-height: 1.285;
 
 }
  
@@ -214,6 +214,10 @@ footer {
   text-align: center;
 }
 
+footer p {
+  margin: 0;
+}
+
 footer .content-wrapper{
 width: 55%;
 margin: 50px 0;
@@ -234,19 +238,13 @@ footer .social-icons p {
   align-items: center;
 }
 
-header .content-wrapper,
-.features p,
-footer p {
-  margin: 0;
-}
+
 
 footer .copyright {
   margin: 20px 0;
 }
 
-aside .form {
-  margin-top: 30px;
-}
+
  
 
 
@@ -311,10 +309,10 @@ input[type=button] {
 /* features */
 
 .features {
-  display: flex;
-  justify-content: center;
+display: flex;
+justify-content: center;
 flex-flow: row wrap;
-background-image: url('../img/rawpixel-800820-unsplash1.jpg');
+background: url('../img/rawpixel-800820-unsplash1.jpg');
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center;
@@ -339,6 +337,11 @@ background-position: center;
 .features p {
   text-align: center;
   margin: 0;
+}
+
+.features i {
+	font-size: 3.75em;
+        margin-bottom: 40px;
 }
 
 /* reviews */
@@ -575,7 +578,7 @@ background-position: center;
     font-size: 3em;
     line-height: 1;
     margin: 0;
-}
+  }
 
   /* Aside */
   aside .content-wrapper {
@@ -653,7 +656,7 @@ background-position: center;
 
   footer p {
     line-height: 1.285;
-}
+  }
 
   footer .copyright {
       width:100%;
@@ -721,86 +724,86 @@ background-position: center;
   
   .content-wrapper {
     max-width: 960px;
-}
-
-h2 {
-  font-size: 2.25em;
-}
-
-h3,
-h4 {
-    font-size: 1.875em;
-}
-
-p {
-    font-size: 1.125em;
-    line-height: 1.333;
-}
-
- /* Hero */
- .hero-area h1 {
-  font-size: 3.75em;
-  width: 80%;
-}
-
-/* Aside */
-aside .content-wrapper {
-  justify-content:space-around;
-}
-
-aside .content-wrapper .form-description,
-aside .content-wrapper .form {
-  width: 30%;
-}
-
-.form-description p {
-  font-size: 1.125em;
-}
-/* Features */
-
-.features h2 {
-  width: 90%;
-}
-
-.features article {
-  flex-basis: 33.3%;
-}
-
-/* Reviews */ 
-.reviews article div {
-  width: 42%;
-}
-
-.reviews h2 {
-  padding-bottom: 50px;
-}
-
-footer h4 {
-  font-size: 1.875em;
-}
-
-/* ==========================================================================
-About Page
-========================================================================== */
-.mission h2,
-.contact-section .content-wrapper h2 {
-  width: 95%;
-  font-size: 3em;
-}
-
-.map figure {
-  padding-bottom: 35.5%; 
   }
 
-/* ==========================================================================
-FAQ Page
-========================================================================== */
-.faq h2 {
+  h2 {
+  font-size: 2.25em;
+  }
+
+  h3,
+  h4 {
+    font-size: 1.875em;
+  }
+
+  p {
+    font-size: 1.125em;
+    line-height: 1.333;
+  }
+
+  /* Hero */
+  .hero-area h1 {
+  font-size: 3.75em;
+  width: 80%;
+  }
+
+  /* Aside */
+  aside .content-wrapper {
+  justify-content:space-around;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+  width: 30%;
+  }
+
+  .form-description p {
+  font-size: 1.125em;
+  }
+  /* Features */
+
+  .features h2 {
+  width: 90%;
+  }
+
+  .features article {
+  flex-basis: 33%;
+  }
+
+  /* Reviews */ 
+  .reviews article div {
+  width: 42%;
+  }
+
+  .reviews h2 {
+  padding-bottom: 50px;
+  }
+
+  footer h4 {
+  font-size: 1.875em;
+  }
+
+  /* ==========================================================================
+  About Page
+  ========================================================================== */
+  .mission h2,
+  .contact-section .content-wrapper h2 {
+  width: 95%;
+  font-size: 3em;
+  }
+
+  .map figure {
+  padding-bottom: 37.5%; 
+  }
+
+  /* ==========================================================================
+  FAQ Page
+  ========================================================================== */
+  .faq h2 {
   width: 100%;
   font-size: 3em;
-}
+  }
 
-.faq h4,
+  .faq h4,
   .faq p {
       font-size: 1.125em;
       line-height: 1;
