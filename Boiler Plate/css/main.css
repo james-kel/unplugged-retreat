@@ -103,7 +103,8 @@ body {
 ul, 
 ol {
   list-style-type: none;
-
+  margin: 0;
+  padding: 0;
 }
  
 a {
@@ -115,6 +116,7 @@ h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
   font-weight: 500;
+  margin: 0;
 }
  
 h3, 
@@ -123,13 +125,11 @@ h4 {
 font-size: 1.125em;
 margin: 20px 0;
 font-weight: 500;
-
 }
  
 p {
 	font-size: 0.875em;
   line-height: 1.285;
-
 }
  
 img {
@@ -142,7 +142,6 @@ figure {
 
 address {
   font-style: normal;
-
 }
  
 .content-wrapper {
@@ -198,15 +197,16 @@ header nav {
   font-weight: 700;
   text-transform: uppercase;
 }
+
 header nav ul {
   display: flex;
   justify-content: space-around;
   width: 100%;
+  
 }
 
 header nav ul li {
   font-size: 1.125em;
-
 }
 
 footer {
@@ -233,11 +233,18 @@ footer .social-icons {
   align-items: center;
 }
 footer .social-icons p {
+  background-color: #527158;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+footer .social-icons p i {
+  font-size: 1.3125em;
+}
 
 
 footer .copyright {
@@ -253,12 +260,11 @@ footer .copyright {
 /* hero-area */
 
 .hero-area {
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-  background-image: url('../img/jake-melara-30679-unsplash.jpg');
+display: flex;
+justify-content: center;
+flex-flow: row wrap;
+background-image: url('../img/jake-melara-30679-unsplash.jpg');
 background-size: cover;
-background-repeat: no-repeat;
 background-position: center;
 min-height: 500px;
 }
@@ -314,7 +320,6 @@ justify-content: center;
 flex-flow: row wrap;
 background: url('../img/rawpixel-800820-unsplash1.jpg');
 background-size: cover;
-background-repeat: no-repeat;
 background-position: center;
 }
 
@@ -341,7 +346,7 @@ background-position: center;
 
 .features i {
 	font-size: 3.75em;
-        margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 /* reviews */
@@ -364,11 +369,7 @@ background-position: center;
   margin: 20px 0;
 }
 
-/* contact */
 
-.social i{
-background-color: #527158;
-}
 /* ABOUT PAGE*/
 
 .mission {
@@ -618,6 +619,11 @@ background-color: #527158;
       width: 62%;
   }
 
+  .features i {
+    margin-bottom: 30px;
+  }
+
+
   /* Reviews */
   .reviews article {
      display: flex;
@@ -662,6 +668,11 @@ background-color: #527158;
 
   footer p {
     line-height: 1.285;
+  }
+
+  footer .social-icons {
+    width: 12.5em;
+    justify-content: space-between;
   }
 
   footer .copyright {
@@ -799,6 +810,10 @@ background-color: #527158;
 
   .map figure {
   padding-bottom: 37.5%; 
+  }
+
+  .contact-content h4 {
+    font-size: 1.875em;
   }
 
   /* ==========================================================================
